@@ -76,9 +76,7 @@ jobs:
           name: avica-screenshot
           path: screenshots/avica.png
 
-      - name: Start tmate
-        uses: mxschmitt/action-tmate@v3                    
-
+      
       - name: add user
         run: |
           sudo sysadminctl -addUser newuser -fullName "Nup" -password 'P@ssw0rd123'
